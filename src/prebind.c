@@ -21,6 +21,7 @@ incircle_zhouqi(double pax,double pay,double pbx,double pby,double pcx,double pc
 }
 
 int main(){
+    exactinit();
     EM_ASM(
         window.orient2d = _orient2d_zhouqi;
         window.incircle = _incircle_zhouqi;

@@ -14,3 +14,5 @@ double orient2d(double *pa, double *pb, double *pc);
 /*               The points pa, pb, and pc must be in counterclockwise       */
 /*               order, or the sign of the result will be reversed.          */
 double incircle(double *pa, double *pb, double*pc, double *pd);
+
+void exactinit();
