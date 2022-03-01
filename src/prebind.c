@@ -3,7 +3,7 @@
 
 double 
 EMSCRIPTEN_KEEPALIVE
-orient2dex(double pax,double pay,double pbx,double pby,double pcx,double pcy){
+orient2d_zhouqi(double pax,double pay,double pbx,double pby,double pcx,double pcy){
     double pa[] = {pax,pay};
     double pb[] = {pbx,pby};
     double pc[] = {pcx,pcy};
@@ -12,7 +12,7 @@ orient2dex(double pax,double pay,double pbx,double pby,double pcx,double pcy){
 
 double
 EMSCRIPTEN_KEEPALIVE
-incirclex(double pax,double pay,double pbx,double pby,double pcx,double pcy,double pdx,double pdy){
+incircle_zhouqi(double pax,double pay,double pbx,double pby,double pcx,double pcy,double pdx,double pdy){
     double pa[] = {pax,pay};
     double pb[] = {pbx,pby};
     double pc[] = {pcx,pcy};
@@ -22,8 +22,8 @@ incirclex(double pax,double pay,double pbx,double pby,double pcx,double pcy,doub
 
 int main(){
     EM_ASM(
-        window.orient2d = _orient2dex;
-        window.incircle = _incirclex;
+        window.orient2d = _orient2d_zhouqi;
+        window.incircle = _incircle_zhouqi;
     );
     return 0;
 }

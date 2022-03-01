@@ -1,0 +1,2 @@
+export function orient2d(pax: number, pay: number, pbx: number, pby: number, pcx: number, pcy: number): number;
+export function incircle2d(pax: number, pay: number, pbx: number, pby: number, pcx: number, pcy: number,pdx:number,pdy:number): number;
